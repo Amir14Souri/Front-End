@@ -14,8 +14,7 @@
         My Family Members
       </caption>
       <tr id="firstRow">
-        <th id="firstCell">First Name</th>
-        <th>last Name</th>
+        <th id="firstCell" colspan="2">Full Name</th>
         <th>Relationship</th>
       </tr>
       <tr class="myRow">
@@ -39,6 +38,43 @@
         <td>Mother</td>
       </tr>
     </table>
-    
+    <form action="" autocomplete="on">
+      <label for="fname">First Name:</label><br />
+      <input type="text" name="firstName" id="fname" required /><br />
+      <label for="lname">Last Name:</label><br />
+      <input type="text" name="lastName" id="lname" required /><br />
+      <span>Gender: </span>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="rns" />
+      <label for="rns">Rather not Say</label><br />
+      <span>Favorite Club(s):</span><br />
+      <input type="checkbox" name="favoriteClub" id="realmadrid" />
+      <label for="realmadrid">Real Madrid</label><br />
+      <input type="checkbox" name="favoriteClub" id="barcelona" />
+      <label for="barcelona">Barcelona</label><br />
+      <input type="checkbox" name="favoriteClub" id="manunited" />
+      <label for="manunited">Manchester United</label><br />
+      <input type="checkbox" name="favoriteClub" id="mancity" />
+      <label for="mancity">Manchester City</label><br />
+      <label for="cars">Choose your preffered player:</label><br />
+      <select name="players" id="cars">
+        <option value="ronaldo">Cristiano Ronaldo</option>
+        <option value="messi">Lionel Messi</option>
+        <option value="mbappe">Kylian Mbapp&eacute;</option>
+        <option value="erling">Erling Haaland</option></select
+      ><br />
+      <label for="brands">Which Brand?</label><br />
+      <input type="text" name="fbrand" id="brands" list="brandsl" />
+      <datalist id="brandsl">
+        <option value="Samsung"></option>
+        <option value="Apple"></option>
+        <option value="Xiaomi"></option></datalist
+      ><br />
+      <input type="reset" name="reset" id="reset" class="btn" />
+      <input type="submit" name="submit" id="submit" class="btn" />
+    </form>
   </body>
 </html>

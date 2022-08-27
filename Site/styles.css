@@ -7,6 +7,10 @@ table, th, td {
     text-align: center;
     border-collapse: collapse;
 }
+table {
+    margin-right: 45px;
+    float: right;
+}
 #firstRow {
     height: 80px;
 }
@@ -17,8 +21,29 @@ tr {
     background-color: aqua;
 }
 .myRow:hover {
-    background-color: rgb(158, 92, 219);
+    background-color: rgb(0, 140, 255);
 }
 img {
     max-width: 100%;
+}
+form {
+    background-color: bisque;
+    display: inline-block;
+    padding: 15px 25px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: 2px solid olivedrab;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+.btn {
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 5px 7px;
+    background-color: aqua;
+    float: right;
+}
+.btn:hover {
+    background-color: rgb(0, 204, 204);
 }
