@@ -10,9 +10,11 @@ table, th, td {
 table {
     margin-right: 45px;
     float: right;
+    width: 25%;
 }
 #firstRow {
     height: 80px;
+    background-color: violet;
 }
 #firstCell {
     width: 200px;
@@ -60,4 +62,12 @@ form {
     font-family: cursive;
     font-style: italic;
     font-weight: bold;
+    cursor: pointer;
+}
+.fa-download {
+    font-size: 40px;
+    color: #131313;
+}
+.fa-download:hover {
+    color: #000000;
 }
