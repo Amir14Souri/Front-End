@@ -13,21 +13,50 @@
   </head>
   <body>
     <ul id="nav">
-      <li><a href="index.html" class="active">Home</a></li>
       <li>
-        <a href="https://www.w3schools.com/" target="_blank">Tutorials</a>
+        <a id="menubar" onclick="show()"><i class="fa-solid fa-bars"></i></a>
       </li>
       <li>
-        <a href="https://www.instagram.com/amir_souri14/" target="_blank"
-          >Contact</a
-        >
+        <a id="closemenu" onclick="hide()"><i class="fa-solid fa-xmark"></i></a>
       </li>
-      <li class="dropdown">
-        <a href="#"><i class="fa-solid fa-caret-down"></i> About</a>
-        <div class="dropcontent">
-          <a href="#">Item 1</a><a href="#">Item 2</a><a href="#">Item 3</a>
-        </div>
-      </li>
+      <div id="navcontent">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li>
+          <a href="https://www.w3schools.com/" target="_blank">Tutorials</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/amir_souri14/" target="_blank"
+            >Contact</a
+          >
+        </li>
+        <li class="dropdown">
+          <a href="#"><i class="fa-solid fa-caret-down"></i> About</a>
+          <div class="dropcontent">
+            <a class="not100" href="#">Item 1</a
+            ><a class="not100" href="#">Item 2</a
+            ><a class="not100" href="#">Item 3</a>
+          </div>
+        </li>
+      </div>
+      <div id="menucontent">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li>
+          <a href="https://www.w3schools.com/" target="_blank">Tutorials</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/amir_souri14/" target="_blank"
+            >Contact</a
+          >
+        </li>
+        <li class="dropdown">
+          <a href="#"><i class="fa-solid fa-caret-down"></i> About</a>
+          <div class="dropcontent">
+            <a class="not100" href="#">Item 1</a
+            ><a class="not100" href="#">Item 2</a
+            ><a class="not100" href="#">Item 3</a>
+          </div>
+        </li>
+      </div>
     </ul>
     <p id="test">
       Amirhossein
@@ -47,7 +76,7 @@
       <input type="radio" name="gender" id="female" />
       <label for="female">Female</label>
       <input type="radio" name="gender" id="rns" />
-      <label for="rns">Rather not Say</label><br />
+      <label for="rns">Rather&nbsp;not&nbsp;Say</label><br />
       <span>Favorite Club(s):</span><br />
       <input type="checkbox" name="favoriteClub" id="realmadrid" />
       <label for="realmadrid">Real Madrid</label><br />
@@ -75,4 +104,22 @@
       <input type="submit" name="submit" id="submit" class="btn" />
     </form>
   </body>
+  <script>
+    function show() {
+      var menubar = document.getElementById("menubar");
+      var closemenu = document.getElementById("closemenu");
+      var menu = document.getElementById("menucontent");
+      closemenu.style.visibility = "visible";
+      menubar.style.display = "none";
+      menu.style.display = "block";
+    }
+    function hide() {
+      var menubar = document.getElementById("menubar");
+      var closemenu = document.getElementById("closemenu");
+      var menu = document.getElementById("menucontent");
+      closemenu.style.visibility = "hidden";
+      menubar.style.display = "block";
+      menu.style.display = "none";
+    }
+  </script>
 </html>
