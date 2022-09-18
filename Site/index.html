@@ -16,29 +16,7 @@
       <li>
         <a id="menubar" onclick="show()"><i class="fa-solid fa-bars"></i></a>
       </li>
-      <li>
-        <a id="closemenu" onclick="hide()"><i class="fa-solid fa-xmark"></i></a>
-      </li>
-      <div id="navcontent">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li>
-          <a href="https://www.w3schools.com/" target="_blank">Tutorials</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/amir_souri14/" target="_blank"
-            >Contact</a
-          >
-        </li>
-        <li class="dropdown">
-          <a href="#"><i class="fa-solid fa-caret-down"></i> About</a>
-          <div class="dropcontent">
-            <a class="not100" href="#">Item 1</a
-            ><a class="not100" href="#">Item 2</a
-            ><a class="not100" href="#">Item 3</a>
-          </div>
-        </li>
-      </div>
-      <div id="menucontent">
+      <div id="menu" class="menucontent">
         <li><a href="index.html" class="active">Home</a></li>
         <li>
           <a href="https://www.w3schools.com/" target="_blank">Tutorials</a>
@@ -103,23 +81,21 @@
       <input type="reset" name="reset" id="reset" class="btn" />
       <input type="submit" name="submit" id="submit" class="btn" />
     </form>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
   </body>
   <script>
     function show() {
-      var menubar = document.getElementById("menubar");
-      var closemenu = document.getElementById("closemenu");
-      var menu = document.getElementById("menucontent");
-      closemenu.style.visibility = "visible";
-      menubar.style.display = "none";
-      menu.style.display = "block";
-    }
-    function hide() {
-      var menubar = document.getElementById("menubar");
-      var closemenu = document.getElementById("closemenu");
-      var menu = document.getElementById("menucontent");
-      closemenu.style.visibility = "hidden";
-      menubar.style.display = "block";
-      menu.style.display = "none";
+      var menu = document.getElementById("menu");
+      if (menu.className === "menucontent") {
+        menu.className += " shown";
+      } else {
+        menu.className = "menucontent";
+      }
     }
   </script>
 </html>

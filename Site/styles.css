@@ -97,11 +97,11 @@ form {
   padding: 0;
   list-style-type: none;
 }
-#menucontent {
-  display: none;
-}
 #nav li {
   float: left;
+}
+#nav > li:first-child {
+  display: none;
 }
 #nav li > a {
   display: inline-block;
@@ -109,10 +109,6 @@ form {
   padding: 15px 19px;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-#nav > li:first-child,
-#nav > li:nth-child(2) {
-  display: none;
 }
 #nav li > a:hover,
 .dropdown:hover > a {
@@ -160,27 +156,25 @@ form {
 }
 
 @media screen and (max-width: 600px) {
-  #navcontent {
+  #nav > li:first-child {
+    display: block;
+  }
+  .menucontent {
     display: none;
   }
-  #menucontent {
-    display: none;
+  #menubar {
+    color: #ffffff;
+  }
+
+  .menucontent.shown {
+    display: block;
     position: absolute;
-    background-color: black;
     top: 49px;
+    background-color: rgba(10, 10, 10, 0.8);
   }
-  #nav a:not(.not100):not(#menubar):not(#closemenu) {
+  .menucontent.shown li > a {
     width: 100vw;
     text-align: left;
-  }
-  #nav > li:first-child {
-    color: #ffffff;
-    display: block;
-  }
-  #nav > li:nth-child(2) {
-    color: #ffffff;
-    display: block;
-    visibility: hidden;
   }
 }
 
@@ -201,4 +195,25 @@ form {
   #test > a {
     display: none;
   }
+}
+
+.container {
+  /* position: fixed;
+  bottom: 0; */
+  height: 200px;
+  display: flex;
+  background-color: coral;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container > div {
+  text-align: center;
+  width: 40px;
+  margin: 10px;
+  padding: 10px;
+  background-color: cornsilk;
+  font-size: 20px;
+  font-weight: bold;
 }
