@@ -12,6 +12,7 @@
     <title>Front-End Developement Course</title>
   </head>
   <body>
+    <!-- navigation menu -->
     <ul id="nav">
       <li>
         <a id="menubar" onclick="show()"><i class="fa-solid fa-bars"></i></a>
@@ -36,56 +37,88 @@
         </li>
       </div>
     </ul>
-    <p id="test">
-      Amirhossein
-      <a
-        href="../Image11.png"
-        class="fa-solid fa-download"
-        download="myImage"></a>
-    </p>
-    <form action="" autocomplete="on">
-      <label for="fname">First Name:</label><br />
-      <input type="text" name="firstName" id="fname" required /><br />
-      <label for="lname">Last Name:</label><br />
-      <input type="text" name="lastName" id="lname" required /><br />
-      <span>Gender: </span>
-      <input type="radio" name="gender" id="male" />
-      <label for="male">Male</label>
-      <input type="radio" name="gender" id="female" />
-      <label for="female">Female</label>
-      <input type="radio" name="gender" id="rns" />
-      <label for="rns">Rather&nbsp;not&nbsp;Say</label><br />
-      <span>Favorite Club(s):</span><br />
-      <input type="checkbox" name="favoriteClub" id="realmadrid" />
-      <label for="realmadrid">Real Madrid</label><br />
-      <input type="checkbox" name="favoriteClub" id="barcelona" />
-      <label for="barcelona">Barcelona</label><br />
-      <input type="checkbox" name="favoriteClub" id="manunited" />
-      <label for="manunited">Manchester United</label><br />
-      <input type="checkbox" name="favoriteClub" id="mancity" />
-      <label for="mancity">Manchester City</label><br />
-      <label for="cars">Choose your preffered player:</label><br />
-      <select name="players" id="cars">
-        <option value="ronaldo">Cristiano Ronaldo</option>
-        <option value="messi">Lionel Messi</option>
-        <option value="mbappe">Kylian Mbapp&eacute;</option>
-        <option value="erling">Erling Haaland</option></select
-      ><br />
-      <label for="brands">Which Brand?</label><br />
-      <input type="text" name="fbrand" id="brands" list="brandsl" />
-      <datalist id="brandsl">
-        <option value="Samsung"></option>
-        <option value="Apple"></option>
-        <option value="Xiaomi"></option></datalist
-      ><br />
-      <input type="reset" name="reset" id="reset" class="btn" />
-      <input type="submit" name="submit" id="submit" class="btn" />
-    </form>
+
+    <!-- webpage container -->
     <div class="container">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
+      <!-- my brand -->
+      <p id="test">
+        Amirhossein
+        <a
+          href="../Image11.png"
+          class="fa-solid fa-download"
+          download="myImage"></a>
+      </p>
+
+      <!-- left side information -->
+      <p style="grid-area: para1;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam et
+        voluptates ducimus rem velit delectus cum beatae labore earum recusandae
+        provident vel perferendis nulla, repellat dicta itaque perspiciatis,
+        eveniet iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Vero sint nihil vitae autem rem totam, iste maxime nesciunt dicta
+        voluptatum. Rerum repellendus maiores doloremque voluptate possimus
+        magni nemo ab at. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Quam sunt laborum non laboriosam quis veritatis quisquam mollitia
+        quasi quae id officiis beatae reiciendis qui assumenda sapiente, vitae,
+        vel aut illo.
+      </p>
+
+      <!-- registery form -->
+      <form action="" autocomplete="on">
+        <label for="fname">First Name:</label><br />
+        <input type="text" name="firstName" id="fname" required /><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" name="lastName" id="lname" required /><br />
+        <span>Gender: </span>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="rns" />
+        <label for="rns">Rather&nbsp;not&nbsp;Say</label><br />
+        <span>Favorite Club(s):</span><br />
+        <input type="checkbox" name="favoriteClub" id="realmadrid" />
+        <label for="realmadrid">Real Madrid</label><br />
+        <input type="checkbox" name="favoriteClub" id="barcelona" />
+        <label for="barcelona">Barcelona</label><br />
+        <input type="checkbox" name="favoriteClub" id="manunited" />
+        <label for="manunited">Manchester United</label><br />
+        <input type="checkbox" name="favoriteClub" id="mancity" />
+        <label for="mancity">Manchester City</label><br />
+        <label for="cars">Choose your preffered player:</label><br />
+        <select name="players" id="cars">
+          <option value="ronaldo">Cristiano Ronaldo</option>
+          <option value="messi">Lionel Messi</option>
+          <option value="mbappe">Kylian Mbapp&eacute;</option>
+          <option value="erling">Erling Haaland</option></select
+        ><br />
+        <label for="brands">Which Brand?</label><br />
+        <input type="text" name="fbrand" id="brands" list="brandsl" />
+        <datalist id="brandsl">
+          <option value="Samsung"></option>
+          <option value="Apple"></option>
+          <option value="Xiaomi"></option></datalist
+        ><br />
+        <input type="reset" name="reset" id="reset" class="btn" />
+        <input type="submit" name="submit" id="submit" class="btn" />
+      </form>
+
+      <!-- right side information -->
+      <p style="grid-area: para2;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum error
+        tenetur unde dolor voluptatem, expedita necessitatibus rerum?
+        Perspiciatis facere dolores quam quasi voluptate mollitia, fugiat fugit.
+        Qui numquam doloremque quas. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Soluta sapiente veritatis ut velit fugit. Placeat hic
+        similique, corporis cum accusamus harum. Sunt modi officiis ullam?
+        Debitis voluptas magni est aperiam? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Sequi id earum itaque saepe animi nemo
+        culpa voluptatem accusantium asperiores quia inventore numquam quisquam
+        deserunt eum fugit placeat veritatis, necessitatibus dolor!
+      </p>
+
+      <!-- my profile -->
+      <img src="../Image11.png" alt="my profile">
     </div>
   </body>
   <script>
