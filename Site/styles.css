@@ -2,24 +2,24 @@
   --green: rgba(208, 255, 0);
 }
 body {
-  background-color: #f7f7f7;
+  background-image: url('../background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   margin: 0;
+  overflow-x: hidden;
 }
 
-/* Form styles */
+/* form styles */
 form {
-  /* width: 45vw;
-  overflow: hidden; */
   background-image: radial-gradient(circle, rgb(44, 93, 255), white);
   padding: 15px 25px;
-  /* margin: auto;
-  margin-top: 40px; */
   border: 2px dotted olivedrab;
   border-radius: 30px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 25px;
   animation: exam 2s linear 1s 2 alternate;
-  grid-area: form;
+  grid-area: 2 / 2 / span 3 / 3;
 }
 #brands {
   background-image: url(../magnifying-glass-solid.svg);
@@ -54,7 +54,7 @@ form {
     -1px 0 2px rgb(115, 33, 197), 0 -1px 2px rgb(115, 33, 197);
 }
 
-/* Brand styles */
+/* brand styles */
 #test {
   background-color: var(--green);
   color: #382828;
@@ -76,7 +76,7 @@ form {
   /* margin-top: 10px;
   overflow: hidden; */
   transition: transform 1.5s, background-color 1.5s, box-shadow 1.5s;
-  grid-area: brand;
+  grid-area: 1 / 1 / 2 / span 3;
 }
 .fa-download {
   font-size: 2.3vw;
@@ -91,7 +91,7 @@ form {
   box-shadow: 5px 10px 12px coral;
 }
 
-/* Navigation Bar styles */
+/* navigation Bar styles */
 #nav {
   background-color: black;
   overflow: hidden;
@@ -157,6 +157,33 @@ form {
   display: block;
 }
 
+/* page container styles */
+.container {
+  background-color: rgba(256, 256, 256, 0.9);
+  display: grid;
+  margin: 60px;
+  padding: 25px;
+  border-radius: 25px;
+  gap: 50px 30px;
+  align-items: flex-start;
+  justify-content: space-around;
+  grid-template-columns: 25% auto 25%;
+}
+img {
+  width: 85%;
+  height: auto;
+  margin: auto;
+  grid-area: 4 / 3 / 5 / 4;
+  filter: grayscale(50%);
+}
+#para1 {
+  grid-area: 2 / 1 / span 3 / 2;
+}
+#para2 {
+  grid-area: 2 / 3 / span 2 / 4;
+}
+
+/* responsive page design */
 @media screen and (max-width: 600px) {
   #nav > li:first-child {
     display: block;
@@ -175,6 +202,7 @@ form {
     background-color: rgba(10, 10, 10, 0.8);
   }
   .menucontent.shown li > a {
+    box-sizing: border-box;
     width: 100vw;
     text-align: left;
   }
@@ -187,34 +215,31 @@ form {
   }
 }
 
-@media screen and (max-width: 640px) {
-  form {
-    width: 65%;
-  }
-}
-
 @media screen and (max-width: 870px) {
   #test > a {
     display: none;
   }
 }
 
-
-
-.container {
-  display: grid;
-  margin: 30px;
-  padding: 25px;
-  border-radius: 25px;
-  grid-template-areas: 'brand brand brand brand brand' 'para1 form form form para2' 'para1 form form form profile';
-  gap: 50px 30px;
-  align-items: flex-start;
-}
-
-img {
-  /* width: 100%;
-  height: auto; */
-  width: 300px;
-  height: 300px;
-  grid-area: profile;
+@media screen and (max-width: 850px) {
+  .container {
+    padding: 10px;
+    margin: 30px;
+    grid-template-columns: auto;
+  }
+  #para1 {
+    grid-area: 2 / 1 / 4 / span 3;
+  }
+  form {
+    width: 80%;
+    grid-area: 4 / 1 / 6 / span 3;
+  }
+  #para2 {
+    grid-area: 6 / 1 / 8 / span 3;
+  }
+  img {
+    width: 55%;
+    height: auto;
+    grid-area: 8 / 1 / 9 / span 3;
+  }
 }
