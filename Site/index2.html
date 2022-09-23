@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="styles2.css" /> -->
     <title>Bootstrap Learning</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- Page Heading -->
+    <h1 class="m-4">Learning Bootstrap 5</h1>
+
+    <!-- Breadcrumb -->
+    <ul class="breadcrumb mx-5">
+        <li class="breadcrumb-item"><a href="">Tutorials</a></li>
+        <li class="breadcrumb-item"><a href="">Front-End Web Developement</a></li>
+        <li class="breadcrumb-item active">Javascript</li>
+    </ul>
+
+    <!-- Page Container -->
+    <div class="container p-4 border bg-primary text-white">
+      <div class="row">
+        <p class="col-lg-3 col-md-4 col-sm-6 col-12">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+          tenetur dolore ipsam hic, culpa, placeat magni quos, odit illo fugiat
+          dicta recusandae incidunt sunt asperiores cum! Ipsa quis provident
+          reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Beatae molestiae obcaecati fugit accusantium, sit assumenda soluta.
+          Iusto dolor asperiores itaque, eius, cumque dignissimos iure quaerat
+          ipsam at voluptatem repellendus a. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Pariatur quibusdam earum explicabo,
+          minus error quisquam possimus ratione tempore perspiciatis aliquid
+          omnis eius tenetur aperiam nisi eligendi similique. Accusamus, alias
+          quod?
+        </p>
+        <p class="col-lg-4 col-md-4 col-sm-6 col-12">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+          assumenda! Pariatur id dicta, delectus, illum hic quod, iste
+          repellendus ipsa in assumenda tenetur excepturi voluptas nesciunt
+          reprehenderit totam quia dolorum. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Nesciunt nihil iste harum perspiciatis
+          sint ipsa, aliquam suscipit impedit et amet enim consequatur nobis
+          beatae iusto quas voluptate vero architecto voluptatem? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Ea labore corporis
+          temporibus dolorem dignissimos repudiandae unde delectus nam non,
+          pariatur doloribus, dolores veniam obcaecati. Sed repudiandae eligendi
+          repellendus facere deleniti.
+        </p>
+        <p class="col-lg-5 col-md-4 col-sm-6 col-12">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+          nesciunt, suscipit voluptates tempore repellat quos, architecto itaque
+          optio pariatur non illo aliquid accusamus. Ratione autem recusandae
+          architecto quaerat quisquam esse? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Suscipit autem reprehenderit possimus
+          maxime beatae quisquam quas, corrupti maiores error eos eius velit,
+          dolor, ipsum sint optio omnis voluptatum exercitationem magnam? Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Tempore nostrum
+          iusto distinctio soluta accusamus voluptatem? Nam sunt placeat ipsa
+          est, doloribus, similique adipisci voluptatem suscipit exercitationem
+          veniam repudiandae fuga debitis.
+        </p>
+      </div>
+    </div>
+
+    <!-- My Profile Picture -->
+    <img
+      src="../Image11.png"
+      alt="my profile"
+      width="300"
+      height="300"
+      class="m-5 img-thumbnail" />
+
+    <!-- Group of Buttons   -->
+    <div class="btn-group btn-group-lg m-3">
+      <button type="button" class="btn btn-outline-danger">Home</button>
+      <button type="button" class="btn btn-outline-danger">Tutorial</button>
+      <button type="button" class="btn btn-outline-danger">
+        Loading
+        <span class="spinner-border spinner-border-sm text-primary"></span>
+      </button>
+    </div>
+
+    <!-- A Paragraph -->
+    <p class="container p-3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
+      molestiae? Vitae in nesciunt reiciendis explicabo officiis! Molestiae
+      iure, id sint repellat doloremque itaque illo nam, rem neque numquam enim
+      libero!
+      <span class="badge bg-success rounded-pill">Free Advertisement</span>
+    </p>
+
+    <!-- Progress Bars -->
+    <div class="progress m-5">
+      <div
+        class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+        style="width: 65%">
+        65%
+      </div>
+      <div
+        class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+        style="width: 15%">
+        15%
+      </div>
+      <div
+        class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+        style="width: 20%">
+        20%
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </body>
+  <!-- Bootstrap JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </html>
