@@ -10,7 +10,7 @@
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="styles2.css" /> -->
+    <link rel="stylesheet" href="styles2.css" />
     <title>Bootstrap Learning</title>
   </head>
   <body>
@@ -19,9 +19,9 @@
 
     <!-- Breadcrumb -->
     <ul class="breadcrumb mx-5">
-        <li class="breadcrumb-item"><a href="">Tutorials</a></li>
-        <li class="breadcrumb-item"><a href="">Front-End Web Developement</a></li>
-        <li class="breadcrumb-item active">Javascript</li>
+      <li class="breadcrumb-item"><a href="">Tutorials</a></li>
+      <li class="breadcrumb-item"><a href="">Front-End Web Developement</a></li>
+      <li class="breadcrumb-item active">Javascript</li>
     </ul>
 
     <!-- Page Container -->
@@ -80,7 +80,23 @@
     <!-- Group of Buttons   -->
     <div class="btn-group btn-group-lg m-3">
       <button type="button" class="btn btn-outline-danger">Home</button>
-      <button type="button" class="btn btn-outline-danger">Tutorial</button>
+      <div class="btn-group btn-group-lg">
+        <button
+          type="button"
+          class="btn btn-outline-danger dropdown-toggle"
+          data-bs-toggle="dropdown">
+          Tutorials
+        </button>
+        <ul class="dropdown-menu">
+          <li><h4 class="dropdown-header">Web Development</h4></li>
+          <li class="dropdown-item">Html Learning</li>
+          <li class="dropdown-item">CSS Learning</li>
+          <li class="dropdown-item">JavaScript Learning</li>
+          <li><h4 class="dropdown-header">Software Development</h4></li>
+          <li class="dropdown-item">Python Learning</li>
+          <li class="dropdown-item">C# Learning</li>
+        </ul>
+      </div>
       <button type="button" class="btn btn-outline-danger">
         Loading
         <span class="spinner-border spinner-border-sm text-primary"></span>
@@ -115,13 +131,44 @@
       </div>
     </div>
 
+    <!-- List Group -->
+    <ul class="list-group m-4">
+      <li
+        class="list-group-item list-group-item-info d-flex justify-content-between align-items-center list-group-item-action">
+        Item 1<span class="badge bg-danger rounded-pill">10</span>
+      </li>
+      <li
+        class="list-group-item list-group-item-info d-flex justify-content-between align-items-center list-group-item-action">
+        Item 2<span class="badge bg-danger rounded-pill">15</span>
+      </li>
+      <li
+        class="list-group-item list-group-item-info d-flex justify-content-between align-items-center list-group-item-action">
+        Item 3<span class="badge bg-danger rounded-pill">8</span>
+      </li>
+    </ul>
+
+    <!-- Card -->
+    <div class="card d-block mx-auto my-3">
+      <img src="../post.png" alt="my profile picture" class="card-img-bottom" />
+      <div class="card-body">
+        <h3 class="card-title">Amirhossein Souri</h3>
+        <p class="card-text">
+          Full-Stack Web Developer, Software Engineer, Machine Learning
+          Developer ...
+        </p>
+        <a href="#" class="card-link">Resume</a>
+      </div>
+    </div>
+
     <!-- Pagination -->
     <ul class="pagination justify-content-center">
-        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Previous</a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
     </ul>
   </body>
   <!-- Bootstrap JavaScript -->
