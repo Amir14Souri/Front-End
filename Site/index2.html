@@ -11,21 +11,78 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="styles2.css" />
+    <link rel="icon" href="../AmirLogo.svg" />
     <title>Bootstrap Learning</title>
   </head>
   <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm bg-light sticky-top border-bottom border-info">
+      <div class="container-fluid">
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsible">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsible">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Tutorials</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </div>
+        <a href="#"><img src="../AmirLogo.svg" alt="Logo" width="50" /></a>
+      </div>
+    </nav>
+
     <!-- Page Heading -->
-    <h1 class="m-4">Learning Bootstrap 5</h1>
+    <h1 class="m-4" title="important header">Learning Bootstrap 5</h1>
 
     <!-- Breadcrumb -->
     <ul class="breadcrumb mx-5">
       <li class="breadcrumb-item"><a href="">Tutorials</a></li>
       <li class="breadcrumb-item"><a href="">Front-End Web Developement</a></li>
-      <li class="breadcrumb-item active">Javascript</li>
+      <li class="breadcrumb-item active">JavaScript</li>
     </ul>
 
+    <!-- Group of Buttons   -->
+    <div class="btn-group btn-group-lg mx-5 my-3">
+      <button
+        type="button"
+        class="btn btn-outline-danger"
+        data-bs-toggle="collapse"
+        data-bs-target="#paras">
+        Paragraphs you should read
+      </button>
+      <div class="btn-group btn-group-lg">
+        <button
+          type="button"
+          class="btn btn-outline-danger dropdown-toggle"
+          data-bs-toggle="dropdown">
+          Tutorials
+        </button>
+        <ul class="dropdown-menu">
+          <li><h4 class="dropdown-header">Web Development</h4></li>
+          <li class="dropdown-item">Html Learning</li>
+          <li class="dropdown-item">CSS Learning</li>
+          <li class="dropdown-item">JavaScript Learning</li>
+          <li><h4 class="dropdown-header">Software Development</h4></li>
+          <li class="dropdown-item">Python Learning</li>
+          <li class="dropdown-item">C# Learning</li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-outline-danger">
+        Loading
+        <span class="spinner-border spinner-border-sm text-primary"></span>
+      </button>
+    </div>
+
     <!-- Page Container -->
-    <div class="container p-4 border bg-primary text-white">
+    <div
+      id="paras"
+      class="container-fluid p-4 border bg-primary text-white collapse">
       <div class="row">
         <p class="col-lg-3 col-md-4 col-sm-6 col-12">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
@@ -34,11 +91,7 @@
           reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
           Beatae molestiae obcaecati fugit accusantium, sit assumenda soluta.
           Iusto dolor asperiores itaque, eius, cumque dignissimos iure quaerat
-          ipsam at voluptatem repellendus a. Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Pariatur quibusdam earum explicabo,
-          minus error quisquam possimus ratione tempore perspiciatis aliquid
-          omnis eius tenetur aperiam nisi eligendi similique. Accusamus, alias
-          quod?
+          ipsam at voluptatem repellendus a.
         </p>
         <p class="col-lg-4 col-md-4 col-sm-6 col-12">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
@@ -64,44 +117,21 @@
           ipsum dolor sit amet, consectetur adipisicing elit. Tempore nostrum
           iusto distinctio soluta accusamus voluptatem? Nam sunt placeat ipsa
           est, doloribus, similique adipisci voluptatem suscipit exercitationem
-          veniam repudiandae fuga debitis.
+          veniam repudiandae fuga debitis. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Necessitatibus consequatur, voluptatibus
+          aperiam iure vero commodi odit magnam?
         </p>
       </div>
     </div>
 
     <!-- My Profile Picture -->
     <img
+      id="profile"
       src="../Image11.png"
       alt="my profile"
       width="300"
       height="300"
-      class="m-5 img-thumbnail" />
-
-    <!-- Group of Buttons   -->
-    <div class="btn-group btn-group-lg m-3">
-      <button type="button" class="btn btn-outline-danger">Home</button>
-      <div class="btn-group btn-group-lg">
-        <button
-          type="button"
-          class="btn btn-outline-danger dropdown-toggle"
-          data-bs-toggle="dropdown">
-          Tutorials
-        </button>
-        <ul class="dropdown-menu">
-          <li><h4 class="dropdown-header">Web Development</h4></li>
-          <li class="dropdown-item">Html Learning</li>
-          <li class="dropdown-item">CSS Learning</li>
-          <li class="dropdown-item">JavaScript Learning</li>
-          <li><h4 class="dropdown-header">Software Development</h4></li>
-          <li class="dropdown-item">Python Learning</li>
-          <li class="dropdown-item">C# Learning</li>
-        </ul>
-      </div>
-      <button type="button" class="btn btn-outline-danger">
-        Loading
-        <span class="spinner-border spinner-border-sm text-primary"></span>
-      </button>
-    </div>
+      class="m-5 img-thumbnail d-block mx-auto" />
 
     <!-- A Paragraph -->
     <p class="container p-3">
